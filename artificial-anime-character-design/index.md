@@ -44,7 +44,8 @@ $$L_G = \frac{1}{n} \sum_{i=0}^{n} L_{CE}(D(G(z)), 1)$$
 * 4 - Zero out gradient for $D$ and calculate $L_D$, where:
 $$L_D = \frac{1}{2n} \sum_{i=0}^{n} L_{CE}(D(X_i), 1) + L_{CE}(D(G(z)), 0)$$
 * 5 - Backpropogate $L_D$ and step up optimizer
-<br/><br/>
+
+<br/>
 {{< image width="600" src="/img/projects/artificial-anime-character-design/summary_figure.png" caption="Overview of GAN process and data flow" >}}
 
 While all GANs have the same basic structure detailed above, there exist many subtleties that result in very different implementations. We explore three implementations: Deep Convolutional, Least Squares, and StyleGAN.
