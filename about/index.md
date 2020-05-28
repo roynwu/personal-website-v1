@@ -1,7 +1,7 @@
 # About
 
 
-<video width="780" controls autoplay loop>
+<video width="100%" controls autoplay loop>
   <source src="/img/monaco.mov" type="video/mp4">
 </video>
 </br></br>
