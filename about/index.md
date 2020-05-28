@@ -2,10 +2,11 @@
 
 <p align="center">
 	<kbd>
-	<img src="/img/banner.png" width="100%">
+	<img src="/img/iceland.JPG" width="100%">
 	</kbd>
 </p>
 </br>
+
 {{< typeit code=python >}}
 print("Hello World!")
 {{< /typeit >}}
