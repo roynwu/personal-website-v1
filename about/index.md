@@ -1,8 +1,8 @@
 # About
 
 
-<video width="100%" controls autoplay loop muted>
-  <source src="/img/monaco_view.mov" type="video/mp4">
+<video width="100%" controls autoplay loop>
+  <source src="/img/monaco.mov" type="video/mp4">
 </video>
 </br>
 
@@ -24,7 +24,7 @@ I have 2 years of experience working in the computer software and FinTech indust
  <tr>
     <td><image width="100%" src="/img/head_shot.JPG"></td>
     <td>
-My name is Roy and I am a Data Scientist interested in Machine Learning and Computer Vision.
+Hi! My name is <b>Roy</b> and I am a Data Scientist interested in Machine Learning and Computer Vision.
 
 I am currently pursuing a Master of Science in Engineering in Data Science at the [University of Pennsylvania](https://dats.seas.upenn.edu/), with a concentration in Computer Vision. During Summer 2020, I am interning at [The Trade Desk](https://www.thetradedesk.com/) (NASDAQ: TTD) as a Data Science Intern.
 
