@@ -1,11 +1,10 @@
 # About
 
-<p align="center">
-	<kbd>
-	<img src="/img/iceland.JPG" width="100%">
-	</kbd>
-</p>
-</br>
+
+<video width="780" controls autoplay loop>
+  <source src="/img/monaco.mov" type="video/mp4">
+</video>
+</br></br>
 
 {{< typeit code=python >}}
 print("Hello World!")
