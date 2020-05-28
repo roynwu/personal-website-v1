@@ -1,10 +1,12 @@
 # About
 
 
-<video width="100%" controls autoplay loop>
-  <source src="/img/monaco.mov" type="video/mp4">
+<video width="100%" controls playsinline autoplay loop muted>
+  <source src="/img/monaco_view.mov" type="video/mp4">
 </video>
 </br></br>
+
+<image width="35%" style="float: left;margin:12.5px 50px 100px 0px" src="/img/head_shot_copy.JPG">
 
 {{< typeit code=python >}}
 print("Hello World!")
