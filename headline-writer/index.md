@@ -21,7 +21,7 @@ Our project is motivated by and built upon previous research in machine translat
 
 We use [“All the news”](https://components.one/datasets/all-the-news-articles-dataset) dataset published by Thompson (2019).  This dataset contains 204,135 news articles with headlines from 18 different American publications. It is an updated version of the dataset posted on Kaggle, containing over 50,000 more articles from a great number of publications.
 
-We use TorchText to preprocess our data. We define a field called TEXT for both the news articles and headlines. First, we define the TEXT field to be sequential and padded to a fixed length of 50. The articles and headlines are tokenized using spaCy and padded with a start token “<SOS>” and end token “<EOS>”. The final training dataset contains 170,000 pairs of articles and headlines, while the validation dataset contains 20,000. We then build the vocabulary and create the word embeddings using GloVE with dimension size of 100. Finally, the training and validation dataset are passed into BucketIterator to generate data loaders for PyTorch in batch size of 32 and sorted by the length of articles. 
+We use TorchText to preprocess our data. We define a field called TEXT for both the news articles and headlines. First, we define the TEXT field to be sequential and padded to a fixed length of 50. The articles and headlines are tokenized using spaCy and padded with a start token “SOS” and end token “EOS”. The final training dataset contains 170,000 pairs of articles and headlines, while the validation dataset contains 20,000. We then build the vocabulary and create the word embeddings using GloVE with dimension size of 100. Finally, the training and validation dataset are passed into BucketIterator to generate data loaders for PyTorch in batch size of 32 and sorted by the length of articles. 
 
 The pipeline of our project is shown in the figure below:
 <br/><br/>
@@ -45,7 +45,7 @@ Our basic Seq2Seq model is based on the Sequence to Sequence Learning with Neura
 <br/><br/>
 {{< image width="500" src="/img/projects/headline-writer/seq2seq.png" caption="Baseline Seq2Seq model" >}}
 
-In our experiment, we tested various RNN architectures; these include Long Short-Term Memory (LSTM), Gated Recurrent Unit (GRU), and Bi-directional LSTM (BiLSTM) units, all which were chosen for their ability to handle sequential data. For our hyperparameters, we use only a single layer that contains 256 hidden units, with no dropouts [Lopyrev's](https://arxiv.org/abs/1512.01712)  observations showed that dropout does not improve the model’s performance). We also use Cross Entropy as our loss function and Adam as our optimizer with a learning rate set to 0.001. These will be the default hyperparameters as we go forward.
+In our experiment, we tested various RNN architectures; these include Long Short-Term Memory (LSTM), Gated Recurrent Unit (GRU), and Bi-directional LSTM (BiLSTM) units, all which were chosen for their ability to handle sequential data. For our hyperparameters, we use only a single layer that contains 256 hidden units, with no dropouts ([Lopyrev's](https://arxiv.org/abs/1512.01712)  observations showed that dropout does not improve the model’s performance). We also use Cross Entropy as our loss function and Adam as our optimizer with a learning rate set to 0.001. These will be the default hyperparameters as we go forward.
 
 #### Attention Mechanism
 
@@ -118,7 +118,7 @@ Then, during the improvement part, we tried out 2 kinds of approaches, including
 
 In order to further improve our model performance in certain scenarios, (for example, to avoid generating faulty information), we implemented the pointer-generator and coverage structure on the basis of BiLSTM with self-attention as the advanced model (using teacher-forcing to train). Surprisingly, the loss and BLEU score after adding the pointer-generator and coverage is not as good as before. We think possible reasons might be that, on the one hand, we changed the loss function by adding coverage loss into it, which just increased component of loss function; on the other hand, although the metrics we used do not suggest improving, after doing qualitative analysis, we find the headline generation is actually improved.
 
-After the exploration phase, we retrained the models using the full dataset and the corresponding results and training loss curves are presented in Figure 5 and Table 3. From the loss curve we can see that all of them are demonstrating similar optimization velocity, and the trend is in consistency with our findings in the subset data that teacher forcing and self-attention helps improve the performance. As for the result, it is not hard to find out that although the metrics are improved by introducing more data, the relative trend keeps the same, and our best model’s (BiLSTM with self-attention, pointer-generator, and coverage structure) BLEU score 0.075 actually beats our main source paper with BLEU of 0.010 [(Lopyrev)](https://arxiv.org/pdf/1512.01712.pdf).
+After the exploration phase, we retrained the models using the full dataset and the corresponding results are presented in the table below. It is not hard to find out that although the metrics are improved by introducing more data, the relative trend keeps the same, and our best model’s (BiLSTM with self-attention, pointer-generator, and coverage structure) BLEU score 0.075 actually beats our main source paper with BLEU of 0.010 [(Lopyrev)](https://arxiv.org/pdf/1512.01712.pdf).
 <br/><br/>
 {{< image width="600" src="/img/projects/headline-writer/fullset.png" caption="Result comparison on full dataset" >}}
 
@@ -142,7 +142,7 @@ The sample outputs validate that the attention mechanism improved the model perf
 
 * 4 - Pointer-generator and coverage approach can significantly reduce the occurrence of the model generating faulty information by including the probability of directly outputting words from the source text
 
-* 5 - Our best model (BiLSTM with self-attention, pointer-generator, and coverage structure) beats our main source paper’s BLEU score of 0.010 by [Lopyrev](https://arxiv.org/pdf/1512.01712.pdf) by 0.075
+* 5 - Our best model (BiLSTM with self-attention, pointer-generator, and coverage structure) beats our main source paper’s BLEU score of 0.010 ([Lopyrev](https://arxiv.org/pdf/1512.01712.pdf)) by 0.075
 
 ### References
 
