@@ -8,7 +8,7 @@
 </br>
 -->
 
-<link rel="stylesheet" href="/w3custom.css">
+<link rel="stylesheet" href="/w3.css">
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
