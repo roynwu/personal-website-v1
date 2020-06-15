@@ -91,11 +91,11 @@
     <h3 class="w3-padding-16" style="margin-bottom: -1.25em;margin-top: 0.5em"><i class="fa fa-user-circle fa-fw w3-margin-right"></i>ABOUT ME</h3><hr style="margin-bottom: 0.5em">
     <div class="w3-container">
       <p style="font-size:14px">Hi! My name is <b>Roy</b> and I am a Data Scientist interested in generative models. I am currently pursuing a M.S. in Data Science at the <a href="https://dats.seas.upenn.edu/">University of Pennsylvania</a>, with a concentration in Computer Vision. During Summer 2020, I am working at <a href="https://www.thetradedesk.com/">The Trade Desk</a> (NASDAQ: TTD) as a Data Science Intern. I have 2 years of experience working in the computer software and FinTech industry as a Solutions Analyst. I also have a B.A. in Mathematics and Economics from <a href="http://www.nyu.edu/">New York University</a>. I’m a data enthusiast with a strong background in statistics and extensive hands-on experience in applying machine learning and big data tools including Python, SQL, Scala, and Spark. My hobbies include piano, swimming, muay thai, skateboarding, and filming & video editing, particulary making timelapses and hyperlapses.<center><hr>
-        <span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
-        <span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i></span>
-        <span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span>
-        <span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-instagram fa-stack-1x fa-inverse"></i></span>
-        <span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-youtube fa-stack-1x fa-inverse"></i></span>
+        <a style="color:inherit" target="_blank" href="mailto:wuroy@seas.upenn.edu"><span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
+        <a style="color:inherit" target="_blank" href="https://www.linkedin.com/in/roynwu"><span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i></span></a>
+        <a style="color: inherit" target="_blank" href="https://github.com/roynwu"><span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a>
+        <a style="color: inherit" target="_blank" href="https://www.instagram.com/willroygu"><span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+        <a style="color: inherit" target="_blank" href="https://www.youtube.com/channel/UC5nZmHELY4QKFHCeFOs-Arg?view_as=subscriber"><span class="fa-stack fa-2x" style="font-size:14px"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-youtube fa-stack-1x fa-inverse"></i></span></a>
       </center></p></p><br>
     </div>
   </div>	
